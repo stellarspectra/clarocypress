@@ -6,8 +6,9 @@
   "scripts": {
     "cypress:runner": "cypress open",
     "cypress:execution": "cypress run",
-    "cypress:regression:test": "cypress run --env tags=@ejecutar",
-    "generate:report:txt": "node ./reportsTXT/ReporteTXT.js"
+        "cypress:regression:test": "cypress run --env tags=@ejecutar",
+    "generate:report:txt": "node ./reportsTXT/ReporteTXT.js",
+    "generate:report": "node ./cucumber-html-report.js"
   },
   "keywords": [
     "cypress"
