@@ -1,0 +1,24 @@
+{
+    "body": {
+        "user": "",
+        "sds": "",
+        "spn": "",
+        "tipoDocumento": "",
+        "nroDocumento": "",
+        "linea": ""
+    },
+    "request": {
+        "method": "POST",
+        "url": "",
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    },
+    "response": {
+        "userProfileResponse": "",
+        "listConsultaPortabildad": "",
+        "error": "",
+        "resultViewGPE": ""
+    } ,  
+    "listInfoByEntity": "SELECT srf.srf_form_number SDS, sry.sry_portin_number SPN, srf.srf_identification_type 'TIPO DOC', srf.srf_identification_number 'NRO DOC', sry.sry_nim_cabecera 'LINEA', srf.srf_a_entidades_ent_id 'ENTIDAD SDS' FROM SERVICE_REQUEST_FORMS srf, SERVICE_REQUEST_PORTABILITY sry WHERE srf.srf_a_entidades_ent_id = '55' AND srf.srf_form_number = sry.sry_form_number AND srf.srf_special_cellular_number = sry.sry_nim_cabecera and rownum <= 5;"
+}

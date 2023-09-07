@@ -1,0 +1,24 @@
+{
+"db": {
+    "user": "EXC74115",
+    "password": "Viernes13",
+    "connectString" : "melideo.claro.amx:1521/ARTPROD"
+},
+
+"validatebusiness":"https://validate-business-portabilidad-ar-qa.apps.osen02.claro.amx/validate-business/portingRanges",
+
+"validateCrm": "https://manager-fija-service-portabilidad-ar.apps.osen02.claro.amx/managerFija/validateCrm",
+
+"validate_user_structure_gpe":"https://act-validations-activaciones-ar.apps.osen02.claro.amx/activation-validations/validate_user_structure_gpe",
+
+"portabilidad_updateEntity": "https://porta-creacion-portabilidad-ar.apps.osen02.claro.amx/portabilidad/updateEntity",
+
+"pantalla_login": "https://test-asm.claro.com.ar",
+
+"pantalla_login_gvp": "https://test-gvp.claro.com.ar/",
+
+"portabilidad_queryByUser": "https://porta-creacion-portabilidad-ar.apps.osen02.claro.amx/portabilidad/consultaTramitePorUsuario",
+
+"logout": "https://test-login.claro.com.ar/"
+
+}

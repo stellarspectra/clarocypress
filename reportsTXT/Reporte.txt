@@ -1,0 +1,4 @@
+JLR>	ID TSC/TC		NOMBRE TSC/TC																								PASS	FAIL
+JLR>	PACT-1234		Visiting Google - OK 		1		0
+JLR>			Visiting twitter - OK 		1		0
+JLR>   Resumen_Regresion	TC PASADOS:2		TC FALLADOS:0		TC TOTALES:2		
