@@ -52,9 +52,16 @@ pipeline {
                  script {
                     def data = readFile(file:'reportsTXT/Reporte.txt')
                     println(data)
-                }
+                } 
 
             }
 
- }
+ 
+
+        }
+
+
+    }
+
+
 }
