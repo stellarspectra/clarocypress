@@ -23,7 +23,7 @@ pipeline {
 
             steps {
 
-                sh 'npm ci'
+                bat 'npm ci'
 
             }
 
@@ -35,7 +35,7 @@ pipeline {
 
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
 
-                sh 'npm run cypress:regression:test'}
+                bat 'npm run cypress:regression:test'}
 
             }
 
@@ -46,7 +46,7 @@ pipeline {
 
             steps {
 
-                sh 'npm run generate:report'
+                nat 'npm run generate:report'
 
                  cucumber buildStatus: 'UNSTABLE',
 					reportTitle: 'My report',
@@ -69,7 +69,7 @@ pipeline {
 
             steps {
 
-                sh 'npm run generate:report:txt'
+                bat 'npm run generate:report:txt'
 
                 script {
 
