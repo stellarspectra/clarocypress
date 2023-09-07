@@ -14,6 +14,7 @@ pipeline {
 
         stage('Dependencies') {
             steps {
+                 bat 'npm cache clean --force'
                  bat 'npm install'             
             }
         }
