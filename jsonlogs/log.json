@@ -1,0 +1,52 @@
+[
+  {
+    "description": "As a user\nI want to visit the Google home page\nSo that I can perform searches",
+    "elements": [
+      {
+        "description": "",
+        "id": "google-home-page;visiting-google",
+        "keyword": "Scenario Outline",
+        "line": 8,
+        "name": "Visiting Google",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I open Google page",
+            "result": {
+              "duration": 1815000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see the Google logo",
+            "result": {
+              "duration": 6099000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario",
+        "tags": [
+          {
+            "line": 7,
+            "name": "@ejecutar"
+          }
+        ]
+      }
+    ],
+    "id": "google-home-page",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Google Home Page",
+    "uri": "cypress\\e2e\\features\\Regresiones\\google.feature"
+  }
+]

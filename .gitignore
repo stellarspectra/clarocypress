@@ -1,6 +1,4 @@
 
-reports/
-jsonlogs/
+
 cypress/videos
 cypress/screenshots
-cucumber-report.html

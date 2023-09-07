@@ -1,0 +1,84 @@
+[
+  {
+    "description": "As a user\nI want to visit the Google home page\nSo that I can perform searches",
+    "elements": [
+      {
+        "description": "PACT-1234",
+        "id": "google-home-page;visiting-google",
+        "keyword": "Scenario Outline",
+        "line": 8,
+        "name": "Visiting Google",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I open Google page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1743000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the Google logo",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6048000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ejecutar",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "google-home-page;visiting-twitter",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Visiting twitter",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I open twitter page2",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9148000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ejecutar",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "google-home-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Google Home Page",
+    "tags": [],
+    "uri": "cypress\\e2e\\features\\Regresiones\\google.feature"
+  }
+]
