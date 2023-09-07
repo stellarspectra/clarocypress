@@ -14,8 +14,7 @@ pipeline {
 
         stage('Dependencies') {
             steps {
-                 bat 'npm install'
-                 bat 'npm i @badeball/cypress-cucumber-preprocessor@latest'                
+                 bat 'npm install'             
             }
         }
 
