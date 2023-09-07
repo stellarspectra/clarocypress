@@ -1,96 +1,37 @@
 pipeline {
 
- 
-
-    agent any
-
- 
-
- 
+     agent any
 
     tools {nodejs 'node 20'}
 
- 
-
- 
-
     environment {
-
- 
 
         CHROME_BIN = '/bin/google-chrome'
 
- 
-
     }
-
- 
-
- 
 
     stages {
 
- 
-
- 
-
         stage('Dependencies') {
-
- 
-
             steps {
-
- 
-
-                bat 'npm ci'
-
- 
-
+                 bat 'npm ci'
             }
-
- 
-
         }
 
- 
-
-        stage('Test Execution') {
-
- 
+         stage('Test Execution') {
 
             steps {
-
- 
 
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
-
- 
-
                 bat 'npm run cypress:regression:test'}
-
- 
 
             }
 
- 
-
-        }
-
- 
-
+         }
      
         stage('Generate HTML Report') {
-
- 
-
             steps {
-
- 
-
                 bat 'npm run generate:report'
-
- 
-
                  cucumber buildStatus: 'UNSTABLE',
                     reportTitle: 'My report',
                     fileIncludePattern: '**/log.json',
@@ -101,53 +42,25 @@ pipeline {
                             'value': 'chrome'
                         ]
                     ]
-
- 
-
             }
+         }
 
  
-
-        }
-
- 
-
         stage('Imprimo log txt'){
-
- 
-
- 
-
             steps {
-
- 
-
                 bat 'npm run generate:report:txt'
-
- 
-
-                script {
-
- 
-
+                 script {
                     def data = readFile(file:'reportsTXT/Reporte.txt')
-
- 
-
                     println(data)
-
- 
-
                 }
 
- 
-
             }
 
- 
+ }
+}
 
  
 
-        }
-
  
+
+}
