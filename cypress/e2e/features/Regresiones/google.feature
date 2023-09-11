@@ -9,6 +9,6 @@ Scenario Outline: Visiting Google
   Given I open Google page
   Then I should see the Google logo
 
-@demo
+@ejecutar
 Scenario Outline: Visiting twitter
-  Then I open twitter page2
+  And I open twitter page2
