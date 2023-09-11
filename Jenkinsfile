@@ -13,11 +13,11 @@ pipeline {
     stages {
         stage('Dependencies') {
             steps {
-               bat 'npm cache clean --force'
-               bat 'npm install'
-               bat 'npm i @badeball/cypress-cucumber-preprocessor@latest'
-               bat 'npm install cypress --save-dev'
-               bat 'npm i cypress-cucumber-preprocessor'
+bat 'npm cache clean --force'
+bat 'npm install'
+bat 'npm i @badeball/cypress-cucumber-preprocessor@latest'
+bat 'npm install cypress --save-dev'
+bat 'npm i @cucumber/gherkin'
                 
                                 
             }
