@@ -11,4 +11,4 @@ Scenario Outline: Visiting Google
 
 @ejecutar
 Scenario Outline: Visiting twitter
-  And I open twitter page2
+  Then I open twitter page2
