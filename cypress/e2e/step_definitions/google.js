@@ -10,7 +10,7 @@ Then('I should see the Google logo', () => {
   cy.wait(3000);
 });
 
-And('I open twitter page2', () => {
+Then('I open twitter page2', () => {
   cy.wait(3000);
   cy.visit('https://drive.google.com/');
   cy.wait(3000);
