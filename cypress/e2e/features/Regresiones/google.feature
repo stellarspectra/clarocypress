@@ -1,8 +1,4 @@
 Feature: Google Home Page
-As a user
-I want to visit the Google home page
-So that I can perform searches
-
 
 @ejecutar
 Scenario Outline: Visiting Google
