@@ -15,6 +15,7 @@ pipeline {
             steps {
                  bat 'npm cache clean --force'
                  bat 'npm install'
+                 bat 'npm install cypress --save-dev'
             }
         }
 
