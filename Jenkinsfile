@@ -40,7 +40,7 @@ bat 'npm install cypress --save-dev'
                 bat 'npm run generate:report'
                  cucumber buildStatus: 'UNSTABLE',
                     reportTitle: 'My report',
-                    fileIncludePattern: '**/log.json',
+                    fileIncludePattern: 'reports/cucumber-htmlreport.html/jsonlogs/log.json',
                     trendsLimit: 10,
                     classifications: [
                         [
