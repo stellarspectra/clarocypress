@@ -5,7 +5,7 @@ So that I can perform searches
 
 
 @ejecutar
-Scenario Outline: Visiting Google
+Scenario Outline: Visiting Googleaa
   Given I open Google page
   Then I should see the Google logo
 
