@@ -35,7 +35,21 @@ bat 'npm install cypress --save-dev'
 
          }
      
-      
+      stage('Generate HTML Report') {
+            steps {
+                bat 'npm run generate:report'
+                 cucumber buildStatus: 'UNSTABLE',
+                    reportTitle: 'My report',
+                    fileIncludePattern: '**/log.json',
+                    trendsLimit: 10,
+                    classifications: [
+                        [
+                            'key': 'Browser',
+                            'value': 'chrome'
+                        ]
+                    ]
+            }
+         }  
 
  
         stage('Imprimo log txt'){
