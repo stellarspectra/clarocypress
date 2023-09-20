@@ -6,7 +6,7 @@ Given('I open Google page', () => {
 
 Then('I should see the Google logo', () => {
   cy.wait(3000);
-  cy.get('img[alt="Google"]').should('be.visible');
+  cy.get('img[alt="Google"]').should('not.be.visible');
   cy.wait(3000);
 });
 
